@@ -21,8 +21,8 @@ function resto_content_type_menu_item_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'number',
         'settings' => array(
-          'decimal_separator' => '.',
-          'prefix_suffix' => TRUE,
+          'decimal_separator' => ',',
+          'prefix_suffix' => 1,
           'scale' => 2,
           'thousand_separator' => ' ',
         ),
@@ -107,8 +107,8 @@ function resto_content_type_menu_item_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-resto_menu_item-body'
-  $field_instances['node-resto_menu_item-body'] = array(
+  // Exported field_instance: 'node-resto_menu_item-field_description'
+  $field_instances['node-resto_menu_item-field_description'] = array(
     'bundle' => 'resto_menu_item',
     'default_value' => NULL,
     'deleted' => 0,
@@ -121,24 +121,22 @@ function resto_content_type_menu_item_field_default_field_instances() {
         'weight' => 0,
       ),
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 6,
       ),
       'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'node',
-    'field_name' => 'body',
+    'field_name' => 'field_description',
     'label' => 'Description',
     'required' => 0,
     'settings' => array(
@@ -160,7 +158,7 @@ function resto_content_type_menu_item_field_default_field_instances() {
           ),
         ),
       ),
-      'display_summary' => 1,
+      'display_summary' => 0,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
@@ -172,7 +170,7 @@ function resto_content_type_menu_item_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 37,
     ),
   );
 

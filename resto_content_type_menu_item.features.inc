@@ -11,6 +11,9 @@ function resto_content_type_menu_item_ctools_plugin_api($module = NULL, $api = N
   if ($module == "ds" && $api == "ds") {
     return array("version" => "1");
   }
+  if ($module == "strongarm" && $api == "strongarm") {
+    return array("version" => "1");
+  }
 }
 
 /**

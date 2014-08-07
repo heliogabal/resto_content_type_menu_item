@@ -29,7 +29,9 @@ function resto_content_type_menu_item_ds_layout_settings_info() {
       'field_menu_price' => 'ds_content',
     ),
     'classes' => array(),
-    'wrappers' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => TRUE,
